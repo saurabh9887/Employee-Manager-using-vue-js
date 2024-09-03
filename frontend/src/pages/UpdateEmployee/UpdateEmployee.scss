@@ -1,0 +1,134 @@
+.updateEmployee {
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .updateEmployeeWrapper {
+    .empInfo {
+      margin-bottom: 15px;
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: 600;
+        color: #555;
+
+        &.required::after {
+          content: "*";
+          color: #e74c3c;
+          margin-left: 5px;
+        }
+      }
+
+      input[type="number"],
+      input[type="text"],
+      input[type="textarea"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        margin-top: 5px;
+        box-sizing: border-box;
+        outline: none;
+      }
+
+      .skills,
+      .select {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 5px;
+
+        label {
+          margin-right: 15px;
+          margin-bottom: 10px;
+        }
+
+        input[type="checkbox"],
+        input[type="radio"] {
+          margin-right: 5px;
+        }
+      }
+      .top {
+        display: flex;
+        justify-content: space-between;
+
+        svg {
+          width: 20px;
+          cursor: pointer;
+        }
+      }
+
+      .reqMsg {
+        color: rgb(215, 54, 54);
+        font-size: 15px;
+        font-weight: 400;
+        margin: 5px;
+      }
+    }
+
+    button[type="submit"] {
+      display: block;
+      width: 30%;
+      padding: 10px;
+      background-color: #3498db;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 20px;
+      font-weight: 600;
+
+      &:hover {
+        background-color: #2980b9;
+      }
+    }
+    .popUp {
+      width: 300px;
+      height: 200px;
+      border: 1px solid rgb(176, 167, 167);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      border-radius: 10px;
+      position: absolute;
+      left: 30%;
+      bottom: 34%;
+      background-color: #cfdbde;
+
+      input {
+        padding: 8px;
+        outline: none;
+        width: 80%;
+        margin-bottom: 10px;
+        font-size: 16px;
+      }
+
+      button {
+        padding: 10px;
+        background-color: #0096c7;
+        outline: none;
+        cursor: pointer;
+        color: white;
+        font-size: 15px;
+        font-weight: 500;
+        border: none;
+        border-radius: 5px;
+      }
+    }
+  }
+}
